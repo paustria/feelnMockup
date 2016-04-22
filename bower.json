@@ -1,0 +1,24 @@
+{
+  "name": "feeln-mockup",
+  "description": "Just a mockup",
+  "main": "bundle.js",
+  "authors": [
+    "Phily Austria <austriaphily@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/paustria/feelnMockup",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6"
+  },
+  "devDependencies": {
+    "bootstrap-sass": "~3.3.6"
+  }
+}
