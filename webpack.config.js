@@ -13,7 +13,8 @@ module.exports = {
         loaders: [
             { test: /\.css$/, loader: "style!css" },
             { test: /\.scss$/, loaders: ["style", "css", "sass"]},
-            { test: /\.(woff|svg|ttf|eot)([\?]?.*)$/, loader: "file-loader?name=[name].[ext]" }
+            { test: /\.(woff|svg|ttf|eot)([\?]?.*)$/, loader: "file-loader?name=[name].[ext]" },
+            { test: /\.(png|jpg|jpeg|gif|woff)$/, loader: 'url-loader?limit=8192' }
         ]
     },
     plugins: [

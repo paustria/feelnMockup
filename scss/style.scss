@@ -1,3 +1,4 @@
+// Bootstrap
 body {
     font-family: "Lato", sans-serif;
 }
@@ -97,6 +98,36 @@ body {
     }
 }
 
+//Slick
+.slick-slide {
+    height: auto;
+    padding: 5px;
+    text-align: center;
+    img {
+        width: 100%;
+    }
+}
+
+.slick-prev,
+.slick-next {
+    &:before {
+        font: normal normal normal 24px/1 FontAwesome;
+        color: #ff6600;
+    }
+}
+
+.slick-prev {
+    &:before {
+        content: "\f053";
+    }
+}
+
+.slick-next {
+    &:before {
+        content: "\f054";
+    }
+}
+
 // Typeface
 body {
     font-family: "Lato", sans-serif;
@@ -139,6 +170,7 @@ small {
 
 .sub-header {
     font-size: 21px;
+    font-weight: 300;
 }
 
 // Customized
@@ -160,6 +192,41 @@ small {
     z-index: 1;
 }
 
+#footer-menu {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    h3 {
+        border-bottom: 1px solid #ccc;
+        letter-spacing: 1px;
+        padding-bottom: 10px;
+    }
+    li {
+        padding: 5px;
+    }
+}
+
+#footer-navbar {
+    background-color: #424242;
+    color: white;
+    font-weight: 300;
+    padding: 20px 0;
+    text-align: center;
+    small {
+        display: block;
+    }
+    .fa-stack-1x {
+        color: #424242;
+    }
+    .fa-stack-2x {
+        color: white;
+    }
+    .links-social {
+        margin: 10px 0 0 0;
+        text-align: center;
+    }
+}
+
 #navbar-login {
     color: white;
     font-weight: 300;
@@ -178,14 +245,48 @@ small {
     text-transform: uppercase;
 }
 
+.carousel-links {
+    color: #ff6600;
+    padding-top: 20px;
+    float: right;
+}
+
+.img-film-popover {
+    float: right;
+    padding-left: 10px;
+}
+
 .logo {
     top: 15px;
     left: 60px;
     width: 130px;
 }
 
+.logo-hallmark-footer {
+    padding-top: 10px;
+}
+
 @media (min-width: 768px) {
+    #footer-navbar {
+        text-align: left;
+        .links-social {
+            text-align: right;
+        }
+        small {
+            display: inline;
+        }
+    }
+
+    .all-rights-reserved {
+        border-left: 1px solid #b0b0b0;
+        padding-left: 5px;
+    }
+
     .carousel-caption {
         bottom: -120px;
+    }
+
+    .logo-hallmark-footer {
+        padding: 0 0 0 10px;
     }
 }
