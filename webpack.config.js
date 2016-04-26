@@ -21,10 +21,14 @@ module.exports = {
         }),
         new webpack.ProvidePlugin({
             $:      "jquery",
-            jQuery: "jquery"
+            jQuery: "jquery",
+            fontawesome: "fontawesome"
         })
     ],
     resolve: {
+        alias: {
+            'fontawesome' : './bower_components/font-awesome/scss/font-awesome.scss'
+        },
         modulesDirectories: ["web_modules", "node_modules", "bower_components"]
     },
     devServer: {

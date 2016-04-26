@@ -1,4 +1,5 @@
 require("jquery");
 require("bootstrap-sass");
+require("fontawesome");
 require("./scss/style.scss");
-document.write(require("./js/content.js"));
+require("./js/content.js");
